@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +21,9 @@ namespace OrigTest.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            dynamic VM = new ExpandoObject();
+            VM.MyTextObject = new { Text1 = "Text ONe", Text2 = "Text Two" };
+            return View(VM);
         }
 
         public IActionResult Privacy()
