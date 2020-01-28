@@ -8,179 +8,237 @@
 }
 <h2>@Model.MyTextObject</h2>
 <div class="container">
- 
+
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Home</a>
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Contact</a>
+            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="card bg-light mb-3">
                 <h5 class="card-header">Home</h5>
-                <div class="card-body">
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert—check it out!
-                    </div>
-                    <div class="alert alert-danger" role="alert">
-                        A simple danger alert—check it out!
-                    </div>
-                    <div class="alert alert-warning" role="alert">
-                        A simple warning alert—check it out!
-                    </div>
-                    <div class="alert alert-info" role="alert">
-                        A simple info alert—check it out!
-                    </div>
-                    <form>
+                
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
+                            <div class="col-8">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                        <h6>I</h6>
+                                        </div>
+                                        
                                     </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="inputEmail4">I</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">N</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputPassword4">T</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
 
-                        </div>
-
-                        <button type="button" class="btn btn-primary">Primary</button>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
-                        <button type="button" class="btn btn-success">Success</button>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="button" class="btn btn-warning">Warning</button>
-                        <button type="button" class="btn btn-info">Info</button>
-                        <button type="button" class="btn btn-light">Light</button>
-                        <button type="button" class="btn btn-dark">Dark</button>
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Launch demo modal
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
                                     </div>
-                                    <div class="modal-body">
-                                        ...
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">S</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">F</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">OP</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">OS</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputPassword4">K</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">E</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEmail4">D</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputPassword4">D</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail4">E</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail4">I</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputPassword4">B</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">WWW</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail4">AA</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail4">AA</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="container row">
+                                    
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="Rcon-tab" data-toggle="tab" href="#R" role="tab" aria-controls="R" aria-selected="true">RCon</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="Dcon-tab" data-toggle="tab" href="#D" role="tab" aria-controls="C" aria-selected="false">Dcon</a>
+                                        </li>
+                                     
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="R" role="tabpanel" aria-labelledby="Rcon-tab">
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">V</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">E</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">H</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="D" role="tabpanel" aria-labelledby="Dcon-tab">
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">V</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">E</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="inputPassword4">H</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="inputPassword4">T</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                
+                                </div>
+
+                                <div class="container row">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label for="inputEmail4">Av</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputEmail4">R</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputEmail4">Df</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </form>
+                   
                 </div>
             </div>
         </div>
@@ -222,21 +280,19 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <br />
             <br />
-            
-            <div class="pt-4 shadow pl-2 pr-2 pb-2" 
-                 style="width: 18rem;border-top-color:aquamarine;
-                    ">
-                <div>
-                    <h5>Card title</h5>
-                    <h6>Card subtitle</h6>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
+
+
+            <div>
+                <h5 style="border:thick ;border-bottom-color:aquamarine;border-bottom-width:thick">Card title</h5>
+                <h6>Card subtitle</h6>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
             </div>
+
             <br />
             <div class="card">
                 <h5 class="card-header bg-primary text-white">Featured</h5>
@@ -297,13 +353,22 @@
             </div>
         </div>
     </div>
-    
+
     <br /><br /><br />
-    
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
 
 
-
-</div>
 
 @section Scripts{
     <script>
